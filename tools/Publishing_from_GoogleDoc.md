@@ -1,6 +1,6 @@
 # Guide on converting a Google Docs document into an eBook (well-structured PDF and EPUB files)
 
-While it is convenient to write a book in Google Docs, transforming it into a high-quality eBook is complicated. Please find below the steps which you should take to make a pair of PDB and EPUB files from a Google Docs document using free software.
+While it is convenient to write a book in Google Docs, transforming it into a high-quality eBook is complicated. Please find below the steps which one should take to make a pair of PDB and EPUB files from a Google Docs document using free software.
 
 ## Why Google Docs
 
@@ -24,7 +24,7 @@ I used Google Docs for writing a compendium which contained hundreds of pages, h
 
 ### The troubles you may encounter
 
-- Google Docs has a hard time saving the table of contents into a PDF (as an outline) or EPUB file. Older versions did not generate it at all, which the newer ones may be buggy and provide next to no control over the structure of the table of contents.
+- Google Docs has a hard time saving the table of contents into a PDF (as an outline) or EPUB file. Older versions did not generate it at all, whilst the newer ones may be buggy and provide next to no control over the structure of the table of contents.
 - The resulting EPUB is not optimized. It may take too long to open and section breaks may be at the wrong granularity level.
 
 ### Use specialized software
@@ -39,11 +39,11 @@ It makes sense to rely on specialized tools:
 
 Even though Google Docs and LibreOffice Writer are about the same thing, they differ in many details. I suppose that you have perfected your book in Google Docs and now want it to look the same in the output PDF file.
 
-So you just go to `File -> Download -> OpenDocument Format (.odt)` in your Google Docs, wait for a while, open the downloaded document with LibreOffice and compare it to the original. I looked at the lengths of the documents - they should match. If they don't, you should probably check the length of every chapter to find the differences. A few hints are below:
+So you just go to `File -> Download -> OpenDocument Format (.odt)` in your Google Docs, wait for the download to complete, open the downloaded document with LibreOffice and compare it to the original. I looked at the lengths of the documents - they should match. If they don't, you should probably check the length of every chapter to find the differences. A few hints are below:
 
 ### Fonts
 
-The Google Docs set of fonts differs from that in OpenOffice Writer. I used Oswald in the explanation sections of my book only to find out that LibreOffice Write silently replaces it with a default font.
+The Google Docs set of fonts differs from that in OpenOffice Writer. I used Oswald in the explanation sections of my book only to find out that LibreOffice Writer silently replaces it with a default font.
 
 Therefore, please check all kinds of text styles which you use throughout your book. If anything looks wrong, you may have to download a corresponding font from Google and install it on your computer.
 
@@ -82,7 +82,7 @@ Thus you may need to increase padding in the `Table Properties -> Borders` dialo
 
 ### Transparency
 
-I used transparency to reduce the contrast of the background image on the title page of my book. LibreOffice Writer does not support transparency for images, only for page areas. I had to delete the cover image and re-insert it through `Page Style -> Area -> Image` to make it semi-transparent via `Page Style -> Area -> Transparency`.
+I used transparency to reduce the contrast of the background image on the title page of my book. LibreOffice Writer does not support transparency for images, only for page areas. I had to delete the cover image and re-insert it through `Page Style -> Area -> Image` to make it semi-transparent via `Page Style -> Transparency`.
 
 ### Bullets and fonts
 
@@ -157,7 +157,7 @@ You will need Calibre. Install it.
         - Check `Manually fine-tune the ToC after conversion`.
     - Click OK and wait for a couple of minutes.
     - Enjoy the preview of your table of contents. You can edit it manually or delete and regenerate it with the buttons on the right side of the dialog.
-        - Alternatively, you can delete the generated table of contents by pressing `Ctrl+A` and `del` and create a new full-depth table of contents by using the `Create table of contents from all headers` button. This allows for making a 4-level table of contents and also adds introductory sections.
+        - Alternatively, you can delete the generated table of contents by pressing `Ctrl+A` and `del` and create a new full-depth table of contents by using the `Create table of contents from all headers` button (and choosing `Include duplicates` if a pop-up appears). This allows for making a 4-level table of contents and also adds introductory sections.
     - If you work on the table of contents for a couple of minutes, there will appear a pop-up warning about a ToC creation timeout. It is safe to ignore.
 - Right-Click on your book. Choose `Open containing folder`. Enjoy the EPUB you've created!
 
@@ -206,6 +206,8 @@ You will probably want Leanpub to offer prospective readers to download a sample
 That's it. Enjoy your book.
 
 Please feel free to [contact me](https://www.linkedin.com/in/denyspoltorak/) if you have any improvements for this instruction.
+
+A version of this guide with screenshots is [available on Medium](https://denyspoltorak.medium.com/guide-on-converting-a-google-docs-text-into-an-ebook-5b1abc65f69d).
 
 
 
