@@ -41,6 +41,8 @@ Even though Google Docs and LibreOffice Writer are about the same thing, they di
 
 So you just go to `File -> Download -> OpenDocument Format (.odt)` in your Google Docs, wait for the download to complete, open the downloaded document with LibreOffice and compare it to the original. I looked at the lengths of the documents - they should match. If they don't, you should probably check the length of every chapter to find the differences. A few hints are below:
 
+> UPDATE: Google Docs became too slow to generate an .ODT from my book. It fails silently (the file is never downloaded). I have to download it as a .DOCX, open the DOSX with LibreOffice and save it as an .ODT file.
+
 ### Fonts
 
 The Google Docs set of fonts differs from that in OpenOffice Writer. I used Oswald in the explanation sections of my book only to find out that LibreOffice Writer silently replaces it with a default font.
